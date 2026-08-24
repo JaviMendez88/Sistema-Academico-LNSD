@@ -1,0 +1,870 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Gestión de Inventario - Sistema Académico LNSD">
+
+    <title>
+        Inventario | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Administración
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardAdministrador.html">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ESTUDIANTES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Estudiantes.html">
+
+                            <i class="bi bi-mortarboard"></i>
+
+                            Estudiantes
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MATRÍCULA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Matricula.html">
+
+                            <i class="bi bi-journal-plus"></i>
+
+                            Matrícula
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- BECAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Becas.html">
+
+                            <i class="bi bi-award"></i>
+
+                            Becas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- BOLETERÍA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Boleteria.html">
+
+                            <i class="bi bi-ticket-perforated"></i>
+
+                            Boletería
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INVENTARIO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Inventario.html"
+                           class="active">
+
+                            <i class="bi bi-box-seam"></i>
+
+                            Inventario
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INFORMATIVO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Informativo.html">
+
+                            <i class="bi bi-megaphone"></i>
+
+                            Informativo
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Gestión de Inventario
+                    </h1>
+
+                    <p>
+                        Control de insumos y materiales del personal institucional
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-badge"></i>
+
+                    <span>
+                        Personal Administrativo
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- TOTAL ARTÍCULOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-box-seam"></i>
+
+                    <h2>
+                        42
+                    </h2>
+
+                    <p>
+                        Artículos Registrados
+                    </p>
+
+                </div>
+
+
+                <!-- STOCK BAJO -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-exclamation-triangle"></i>
+
+                    <h2>
+                        4
+                    </h2>
+
+                    <p>
+                        Stock Bajo
+                    </p>
+
+                </div>
+
+
+                <!-- SOLICITUDES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-clipboard-plus"></i>
+
+                    <h2>
+                        3
+                    </h2>
+
+                    <p>
+                        Solicitudes Pendientes
+                    </p>
+
+                </div>
+
+
+                <!-- MOVIMIENTOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-arrow-left-right"></i>
+
+                    <h2>
+                        15
+                    </h2>
+
+                    <p>
+                        Movimientos del Mes
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 REGISTRAR MOVIMIENTO
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Registrar Movimiento de Inventario
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px;">
+
+                        <div class="form-row">
+
+                            <label>
+                                Artículo
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Papel Bond (resma)
+                                </option>
+
+                                <option>
+                                    Tinta de Impresora
+                                </option>
+
+                                <option>
+                                    Jabón Líquido
+                                </option>
+
+                                <option>
+                                    Desinfectante
+                                </option>
+
+                                <option>
+                                    Marcadores de Pizarra
+                                </option>
+
+                                <option>
+                                    Nuevo Artículo...
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Tipo de Movimiento
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Entrada (Registrar Ingreso)
+                                </option>
+
+                                <option>
+                                    Salida (Eliminar / Dar de Baja)
+                                </option>
+
+                                <option>
+                                    Solicitud de Reposición
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Cantidad
+                            </label>
+
+                            <input type="number"
+                                   placeholder="Ej. 10">
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Motivo
+                            </label>
+
+                            <input type="text"
+                                   placeholder="Ej. Reposición de bodega">
+
+                        </div>
+
+                    </div>
+
+
+                    <div style="margin-top:20px; text-align:right;">
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-save"></i>
+
+                            Registrar Movimiento
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 AVISO
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="alert-box">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    <p>
+                        Todo registro, solicitud o eliminación queda guardado
+                        automáticamente en el reporte de movimientos, indicando
+                        quién lo realizó, qué artículo y en qué cantidad.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Buscar Artículos
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+
+                        <input type="text"
+                               placeholder="Buscar artículo..."
+                               style="padding:10px; width:250px;">
+
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Todas las categorías
+                            </option>
+
+                            <option>
+                                Papelería
+                            </option>
+
+                            <option>
+                                Limpieza
+                            </option>
+
+                            <option>
+                                Tecnología
+                            </option>
+
+                            <option>
+                                Oficina
+                            </option>
+
+                        </select>
+
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-search"></i>
+
+                            Buscar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 TABLA DE INVENTARIO
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Artículos en Inventario
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Artículo</th>
+
+                                <th>Categoría</th>
+
+                                <th>Cantidad</th>
+
+                                <th>Estado</th>
+
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- ARTÍCULO 1 -->
+
+                            <tr>
+
+                                <td>
+                                    INV-001
+                                </td>
+
+                                <td>
+                                    Papel Bond (resma)
+                                </td>
+
+                                <td>
+                                    Papelería
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Stock Bajo
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-plus-circle"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ARTÍCULO 2 -->
+
+                            <tr>
+
+                                <td>
+                                    INV-002
+                                </td>
+
+                                <td>
+                                    Tinta de Impresora
+                                </td>
+
+                                <td>
+                                    Tecnología
+                                </td>
+
+                                <td>
+                                    22
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Disponible
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-plus-circle"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ARTÍCULO 3 -->
+
+                            <tr>
+
+                                <td>
+                                    INV-003
+                                </td>
+
+                                <td>
+                                    Jabón Líquido
+                                </td>
+
+                                <td>
+                                    Limpieza
+                                </td>
+
+                                <td>
+                                    35
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Disponible
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-plus-circle"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ARTÍCULO 4 (AGOTADO) -->
+
+                            <tr class="row-alert">
+
+                                <td>
+                                    INV-004
+                                </td>
+
+                                <td>
+                                    Desinfectante
+                                </td>
+
+                                <td>
+                                    Limpieza
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-danger">
+                                        Agotado
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-plus-circle"></i>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 REPORTE DE MOVIMIENTOS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Reporte de Movimientos
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Fecha</th>
+
+                                <th>Usuario</th>
+
+                                <th>Acción</th>
+
+                                <th>Artículo</th>
+
+                                <th>Cantidad</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    08/08/2026 10:15
+                                </td>
+
+                                <td>
+                                    Rosa Vargas
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Agregó
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Tinta de Impresora
+                                </td>
+
+                                <td>
+                                    +10
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    08/08/2026 14:40
+                                </td>
+
+                                <td>
+                                    Rosa Vargas
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-danger">
+                                        Eliminó
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Desinfectante
+                                </td>
+
+                                <td>
+                                    -6
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    09/08/2026 08:05
+                                </td>
+
+                                <td>
+                                    Marco Solano
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Solicitó
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Papel Bond (resma)
+                                </td>
+
+                                <td>
+                                    20
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

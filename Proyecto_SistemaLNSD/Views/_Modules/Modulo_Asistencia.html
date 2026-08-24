@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Registro de Asistencia - Sistema Académico LNSD">
+
+    <title>
+        Asistencia | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Docente
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardDocente.html" class="active">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MIS CURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Cursos.html">
+
+                            <i class="bi bi-book"></i>
+
+                            Mis Cursos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Asistencia.html"
+                           class="active">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notas.html">
+
+                            <i class="bi bi-journal-check"></i>
+
+                            Notas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- RECURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_RecursosAcademicos.html">
+
+                            <i class="bi bi-folder"></i>
+
+                            Recursos Académicos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Registro de Asistencia
+                    </h1>
+
+                    <p>
+                        Control diario de asistencia por curso y grupo
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-workspace"></i>
+
+                    <span>
+                        Profesor Juan Pérez
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES DEL DÍA
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- TOTAL ESTUDIANTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-people"></i>
+
+                    <h2>
+                        28
+                    </h2>
+
+                    <p>
+                        Total Estudiantes
+                    </p>
+
+                </div>
+
+
+                <!-- PRESENTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-check-circle"></i>
+
+                    <h2>
+                        25
+                    </h2>
+
+                    <p>
+                        Presentes
+                    </p>
+
+                </div>
+
+
+                <!-- AUSENTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-x-circle"></i>
+
+                    <h2>
+                        2
+                    </h2>
+
+                    <p>
+                        Ausentes
+                    </p>
+
+                </div>
+
+
+                <!-- TARDÍAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-clock-history"></i>
+
+                    <h2>
+                        1
+                    </h2>
+
+                    <p>
+                        Tardías
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Seleccionar Curso y Fecha
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:flex; gap:15px; flex-wrap:wrap; align-items:center;">
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Matemáticas 10-A
+                            </option>
+
+                            <option>
+                                Matemáticas 10-B
+                            </option>
+
+                            <option>
+                                Matemáticas 11-A
+                            </option>
+
+                            <option>
+                                Matemáticas 11-B
+                            </option>
+
+                            <option>
+                                Matemáticas 12-A
+                            </option>
+
+                        </select>
+
+
+                        <input type="date"
+                               value="2026-08-09"
+                               style="padding:10px;">
+
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-search"></i>
+
+                            Cargar Lista
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 AVISO DE NOTIFICACIÓN AUTOMÁTICA
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="alert-box">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    <p>
+                        Cuando un estudiante acumula un número elevado de faltas,
+                        el sistema envía automáticamente una notificación al
+                        encargado y al estudiante.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LISTA DE ASISTENCIA
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Lista de Asistencia — Matemáticas 10-A
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Nombre</th>
+
+                                <th>Faltas Acumuladas</th>
+
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- ESTUDIANTE 1 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-001
+                                </td>
+
+                                <td>
+                                    Ana Martínez
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+
+                                    <select class="status-select">
+
+                                        <option selected>Presente</option>
+
+                                        <option>Ausente</option>
+
+                                        <option>Tardía</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 2 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-002
+                                </td>
+
+                                <td>
+                                    Luis Fernández
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+
+                                    <select class="status-select">
+
+                                        <option selected>Presente</option>
+
+                                        <option>Ausente</option>
+
+                                        <option>Tardía</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 3 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-003
+                                </td>
+
+                                <td>
+                                    Sofía Rodríguez
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+
+                                    <select class="status-select">
+
+                                        <option>Presente</option>
+
+                                        <option>Ausente</option>
+
+                                        <option selected>Tardía</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 4 (CASO DE ALERTA) -->
+
+                            <tr class="row-alert">
+
+                                <td>
+                                    EST-004
+                                </td>
+
+                                <td>
+                                    Diego Castro
+                                </td>
+
+                                <td>
+                                    6
+                                    <span class="badge badge-danger">
+                                        Alerta
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <select class="status-select">
+
+                                        <option>Presente</option>
+
+                                        <option selected>Ausente</option>
+
+                                        <option>Tardía</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 5 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-005
+                                </td>
+
+                                <td>
+                                    Valeria Jiménez
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+
+                                    <select class="status-select">
+
+                                        <option selected>Presente</option>
+
+                                        <option>Ausente</option>
+
+                                        <option>Tardía</option>
+
+                                    </select>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+
+                    <div style="margin-top:20px; text-align:right;">
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-save"></i>
+
+                            Guardar Asistencia
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 NOTIFICACIÓN GENERADA (EJEMPLO)
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Notificación Generada
+                </h2>
+
+                <div class="alert-box alert-danger">
+
+                    <i class="bi bi-exclamation-triangle"></i>
+
+                    <p>
+                        Diego Castro alcanzó 6 faltas acumuladas. Se envió una
+                        notificación automática al encargado y al estudiante.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

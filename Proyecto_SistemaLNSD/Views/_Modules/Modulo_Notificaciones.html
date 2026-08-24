@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Centro de Notificaciones - Sistema Académico LNSD">
+
+    <title>
+        Notificaciones | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Administrador
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardAdministrador.html" class="active">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html"
+                           class="active">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Centro de Notificaciones
+                    </h1>
+
+                    <p>
+                        Noticias importantes, notas, cambios de horario y avisos institucionales
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span>
+                        Administrador
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- NO LEÍDAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-envelope-exclamation"></i>
+
+                    <h2>
+                        5
+                    </h2>
+
+                    <p>
+                        No Leídas
+                    </p>
+
+                </div>
+
+
+                <!-- ACADÉMICAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-journal-check"></i>
+
+                    <h2>
+                        7
+                    </h2>
+
+                    <p>
+                        Académicas
+                    </p>
+
+                </div>
+
+
+                <!-- HORARIOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    <h2>
+                        4
+                    </h2>
+
+                    <p>
+                        Cambios de Horario
+                    </p>
+
+                </div>
+
+
+                <!-- AVISOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-megaphone"></i>
+
+                    <h2>
+                        3
+                    </h2>
+
+                    <p>
+                        Avisos Institucionales
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="activity-card">
+
+                    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Todas las categorías
+                            </option>
+
+                            <option>
+                                Académicas
+                            </option>
+
+                            <option>
+                                Asistencia
+                            </option>
+
+                            <option>
+                                Horarios
+                            </option>
+
+                            <option>
+                                Becas
+                            </option>
+
+                            <option>
+                                Institucionales
+                            </option>
+
+                        </select>
+
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Todas
+                            </option>
+
+                            <option>
+                                No leídas
+                            </option>
+
+                            <option>
+                                Leídas
+                            </option>
+
+                        </select>
+
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-check2-all"></i>
+
+                            Marcar Todas como Leídas
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LISTA DE NOTIFICACIONES
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Todas las Notificaciones
+                </h2>
+
+                <div class="activity-card"
+                     style="padding:0;">
+
+                    <div class="notif-item unread"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-journal-check"></i>
+                        <div>
+                            <p><strong>Notas:</strong> se registró una nueva calificación en Química para Ana Martínez.</p>
+                            <span>Hace 20 minutos</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item unread"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-calendar3"></i>
+                        <div>
+                            <p><strong>Horario:</strong> Química se movió de 08:00 a 09:00, grupo 10-A.</p>
+                            <span>Hace 3 horas</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item unread"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-exclamation-triangle"></i>
+                        <div>
+                            <p><strong>Asistencia:</strong> Diego Castro acumuló 6 faltas en Matemáticas 10-A.</p>
+                            <span>Hoy</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item unread"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-award"></i>
+                        <div>
+                            <p><strong>Becas:</strong> se revocó la Beca Socioeconómica de Luis Fernández.</p>
+                            <span>Hoy</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item unread"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-box-seam"></i>
+                        <div>
+                            <p><strong>Inventario:</strong> stock bajo de papel bond en bodega principal.</p>
+                            <span>Ayer</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-megaphone"></i>
+                        <div>
+                            <p><strong>Institucional:</strong> reunión de personal programada para el viernes.</p>
+                            <span>Ayer</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-journal-plus"></i>
+                        <div>
+                            <p><strong>Matrícula:</strong> proceso de matrícula del mes completado al 100%.</p>
+                            <span>Hace 2 días</span>
+                        </div>
+                    </div>
+
+                    <div class="notif-item"
+                         style="padding:18px 25px;">
+                        <i class="bi bi-shield-exclamation"></i>
+                        <div>
+                            <p><strong>Institucional:</strong> nuevo reporte anónimo recibido para revisión.</p>
+                            <span>Hace 3 días</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

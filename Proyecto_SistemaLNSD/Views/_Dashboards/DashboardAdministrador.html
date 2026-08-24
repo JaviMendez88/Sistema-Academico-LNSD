@@ -1,0 +1,1007 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Panel de Administración del Sistema Académico LNSD">
+
+    <title>
+        Dashboard Administración | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet" href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg" alt="Logo Liceo Nuevo de Santo Domingo" class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Administración
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardAdministrador.html" class="active">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SEPARADOR -->
+
+                    <li class="sidebar-divider"></li>
+
+
+                    <!-- USUARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Usuarios_Roles_Permisos.html">
+
+                            <i class="bi bi-people"></i>
+
+                            Usuarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- DOCENTES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Docentes.html">
+
+                            <i class="bi bi-person-workspace"></i>
+
+                            Docentes
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ESTUDIANTES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Estudiantes.html">
+
+                            <i class="bi bi-mortarboard"></i>
+
+                            Estudiantes
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SEPARADOR -->
+
+                    <li class="sidebar-divider"></li>
+
+
+                    <!-- CURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Cursos.html">
+
+                            <i class="bi bi-book"></i>
+
+                            Cursos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MATRÍCULAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Matricula.html">
+
+                            <i class="bi bi-journal-plus"></i>
+
+                            Matrículas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SEPARADOR -->
+
+                    <li class="sidebar-divider"></li>
+
+
+                    <!-- BECAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Becas.html">
+
+                            <i class="bi bi-award"></i>
+
+                            Becas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- RECURSOS ACADÉMICOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_RecursosAcademicos.html">
+
+                            <i class="bi bi-folder"></i>
+
+                            Recursos Académicos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SEPARADOR -->
+
+                    <li class="sidebar-divider"></li>
+
+
+                    <!-- BOLETERÍA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Boleteria.html">
+
+                            <i class="bi bi-ticket-perforated"></i>
+
+                            Boletería
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INVENTARIO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Inventario.html">
+
+                            <i class="bi bi-box-seam"></i>
+
+                            Inventario
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INFORMATIVO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Informativo.html">
+
+                            <i class="bi bi-megaphone"></i>
+
+                            Informativo
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- REPORTES ANÓNIMOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_ReportesAnonimos.html">
+
+                            <i class="bi bi-shield-exclamation"></i>
+
+                            Reportes Anónimos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SEPARADOR -->
+
+                    <li class="sidebar-divider"></li>
+
+
+                    <!-- CONFIGURACIÓN -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Configuracion_Administracion.html">
+
+                            <i class="bi bi-gear"></i>
+
+                            Configuración
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+
+        </aside>
+
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Panel de Administración
+                    </h1>
+
+                    <p>
+                        Bienvenido al Sistema Académico LNSD
+                    </p>
+
+                </div>
+
+
+                <details class="notif-bell">
+
+                    <summary>
+                        <i class="bi bi-bell"></i>
+                        <span class="notif-badge">4</span>
+                    </summary>
+
+                    <div class="notif-dropdown">
+
+                        <div class="notif-dropdown-header">
+                            <span>Notificaciones</span>
+                            <a href="../_Modules/Modulo_Notificaciones.html">Ver todas</a>
+                        </div>
+
+                        <div class="notif-item unread">
+                            <i class="bi bi-person-plus"></i>
+                            <div>
+                                <p>Nuevo usuario registrado en el sistema.</p>
+                                <span>Hace 20 minutos</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item unread">
+                            <i class="bi bi-box-seam"></i>
+                            <div>
+                                <p>Inventario con stock bajo: papel bond.</p>
+                                <span>Hace 1 hora</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item unread">
+                            <i class="bi bi-journal-plus"></i>
+                            <div>
+                                <p>Matrícula del mes completada al 100%.</p>
+                                <span>Hoy</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item">
+                            <i class="bi bi-shield-exclamation"></i>
+                            <div>
+                                <p>Nuevo reporte anónimo recibido.</p>
+                                <span>Ayer</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-circle"></i>
+
+                    <span>
+                        Administración
+                    </span>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================
+                 KPIs
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- ESTUDIANTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-mortarboard"></i>
+
+                    <h2>
+                        825
+                    </h2>
+
+                    <p>
+                        Estudiantes
+                    </p>
+
+                </div>
+
+
+                <!-- DOCENTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-person-workspace"></i>
+
+                    <h2>
+                        56
+                    </h2>
+
+                    <p>
+                        Docentes
+                    </p>
+
+                </div>
+
+
+                <!-- CURSOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-book"></i>
+
+                    <h2>
+                        42
+                    </h2>
+
+                    <p>
+                        Cursos
+                    </p>
+
+                </div>
+
+
+                <!-- BECAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-award"></i>
+
+                    <h2>
+                        73
+                    </h2>
+
+                    <p>
+                        Becas Activas
+                    </p>
+
+                </div>
+
+
+                <!-- HORARIOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    <h2>
+                        48
+                    </h2>
+
+                    <p>
+                        Horarios Registrados
+                    </p>
+
+                </div>
+
+
+                <!-- INVENTARIO -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-exclamation-triangle"></i>
+
+                    <h2>
+                        4
+                    </h2>
+
+                    <p>
+                        Artículos con Stock Bajo
+                    </p>
+
+                </div>
+
+
+                <!-- REPORTES ANÓNIMOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-shield-exclamation"></i>
+
+                    <h2>
+                        2
+                    </h2>
+
+                    <p>
+                        Reportes Anónimos Pendientes
+                    </p>
+
+                </div>
+
+
+                <!-- MATRÍCULA -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-journal-plus"></i>
+
+                    <h2>
+                        100%
+                    </h2>
+
+                    <p>
+                        Matrícula del Mes Completada
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ACCESOS RÁPIDOS
+            ================================== -->
+
+            <section>
+
+
+                <h2 class="dashboard-section-title">
+                    Accesos Rápidos
+                </h2>
+
+
+                <div class="module-grid">
+
+
+                    <!-- USUARIOS -->
+
+                    <a href="../_Modules/Modulo_Usuarios_Roles_Permisos.html" class="module-card">
+
+                        <i class="bi bi-people"></i>
+
+                        <span>
+                            Usuarios
+                        </span>
+
+                    </a>
+
+
+                    <!-- DOCENTES -->
+
+                    <a href="../_Modules/Modulo_Docentes.html" class="module-card">
+
+                        <i class="bi bi-person-workspace"></i>
+
+                        <span>
+                            Docentes
+                        </span>
+
+                    </a>
+
+
+                    <!-- ESTUDIANTES -->
+
+                    <a href="../_Modules/Modulo_Estudiantes.html" class="module-card">
+
+                        <i class="bi bi-mortarboard"></i>
+
+                        <span>
+                            Estudiantes
+                        </span>
+
+                    </a>
+
+
+                    <!-- CURSOS -->
+
+                    <a href="../_Modules/Modulo_Cursos.html" class="module-card">
+
+                        <i class="bi bi-book"></i>
+
+                        <span>
+                            Cursos
+                        </span>
+
+                    </a>
+
+
+                    <!-- MATRÍCULAS -->
+
+                    <a href="../_Modules/Modulo_Matricula.html" class="module-card">
+
+                        <i class="bi bi-journal-plus"></i>
+
+                        <span>
+                            Matrículas
+                        </span>
+
+                    </a>
+
+
+                    <!-- HORARIOS -->
+
+                    <a href="../_Modules/Modulo_Horarios.html" class="module-card">
+
+                        <i class="bi bi-calendar3"></i>
+
+                        <span>
+                            Horarios
+                        </span>
+
+                    </a>
+
+                    <!-- BECAS -->
+
+                    <a href="../_Modules/Modulo_Becas.html" class="module-card">
+
+                        <i class="bi bi-award"></i>
+
+                        <span>
+                            Becas
+                        </span>
+
+                    </a>
+
+
+                    <!-- RECURSOS ACADÉMICOS -->
+
+                    <a href="../_Modules/Modulo_RecursosAcademicos.html" class="module-card">
+
+                        <i class="bi bi-folder"></i>
+
+                        <span>
+                            Recursos Académicos
+                        </span>
+
+                    </a>
+
+
+                    <!-- BOLETERÍA -->
+
+                    <a href="../_Modules/Modulo_Boleteria.html" class="module-card">
+
+                        <i class="bi bi-ticket-perforated"></i>
+
+                        <span>
+                            Boletería
+                        </span>
+
+                    </a>
+
+
+                    <!-- INVENTARIO -->
+
+                    <a href="../_Modules/Modulo_Inventario.html" class="module-card">
+
+                        <i class="bi bi-box-seam"></i>
+
+                        <span>
+                            Inventario
+                        </span>
+
+                    </a>
+
+
+                    <!-- INFORMATIVO -->
+
+                    <a href="../_Modules/Modulo_Informativo.html" class="module-card">
+
+                        <i class="bi bi-megaphone"></i>
+
+                        <span>
+                            Informativo
+                        </span>
+
+                    </a>
+
+
+                    <!-- REPORTES ANÓNIMOS -->
+
+                    <a href="../_Modules/Modulo_ReportesAnonimos.html" class="module-card">
+
+                        <i class="bi bi-shield-exclamation"></i>
+
+                        <span>
+                            Reportes Anónimos
+                        </span>
+
+                    </a>
+
+
+                    <!-- CONFIGURACIÓN -->
+
+                    <a href="../_Modules/Modulo_Configuracion_Administracion.html" class="module-card">
+
+                        <i class="bi bi-gear"></i>
+
+                        <span>
+                            Configuración
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ACTIVIDAD RECIENTE
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+                    Actividad Reciente
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se registró un nuevo estudiante.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se actualizó un horario académico y se notificó a docentes.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se publicaron nuevos recursos académicos.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se aprobó una beca socioeconómica.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se completó el proceso de matrícula del mes.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se registró un movimiento de inventario.
+                    </p>
+
+
+                    <p>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Se recibió un reporte anónimo.
+                    </p>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 PRÓXIMOS EVENTOS
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Próximos Eventos
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Consejo de Profesores - 15 Agosto
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Feria Científica - 22 Agosto
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Entrega de Calificaciones - 30 Agosto
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Reunión con Encargados - 05 Septiembre
+
+                    </p>
+
+
+                </div>
+
+            </section>
+            
+                        <!-- =================================
+                 PENDIENTES DEL DÍA
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Pendientes del Día
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        Revisar solicitudes de matrícula.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        Validar cupos disponibles por sección.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        Actualizar inventario de suministros.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        Publicar comunicado institucional.
+
+                    </p>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ALERTAS
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Alertas
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-exclamation-triangle"></i>
+
+                        4 artículos por debajo del mínimo de inventario.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-exclamation-triangle"></i>
+
+                        12 matrículas pendientes de revisión.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-exclamation-triangle"></i>
+
+                        2 solicitudes de beca pendientes.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-exclamation-triangle"></i>
+
+                        3 notificaciones institucionales sin publicar.
+
+                    </p>
+
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+    </main>
+
+
+    </div>
+
+
+</body>
+
+</html>

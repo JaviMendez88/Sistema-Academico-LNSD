@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Recursos Académicos - Sistema Académico LNSD">
+
+    <title>
+        Recursos Académicos | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Docente
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardDocente.html">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MIS CURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Cursos.html">
+
+                            <i class="bi bi-book"></i>
+
+                            Mis Cursos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Asistencia.html">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notas.html">
+
+                            <i class="bi bi-journal-check"></i>
+
+                            Notas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- RECURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_RecursosAcademicos.html"
+                           class="active">
+
+                            <i class="bi bi-folder"></i>
+
+                            Recursos Académicos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Recursos Académicos
+                    </h1>
+
+                    <p>
+                        Biblioteca de videos, libros e investigaciones de apoyo
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-workspace"></i>
+
+                    <span>
+                        Profesor Juan Pérez
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- VIDEOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-youtube"></i>
+
+                    <h2>
+                        12
+                    </h2>
+
+                    <p>
+                        Videos Tutoriales
+                    </p>
+
+                </div>
+
+
+                <!-- LIBROS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-book"></i>
+
+                    <h2>
+                        18
+                    </h2>
+
+                    <p>
+                        Libros Aprobados
+                    </p>
+
+                </div>
+
+
+                <!-- INVESTIGACIONES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-file-earmark-richtext"></i>
+
+                    <h2>
+                        9
+                    </h2>
+
+                    <p>
+                        Investigaciones Estudiantiles
+                    </p>
+
+                </div>
+
+
+                <!-- TOTAL -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-collection"></i>
+
+                    <h2>
+                        39
+                    </h2>
+
+                    <p>
+                        Total de Recursos
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 SUBIR RECURSO
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Subir Nuevo Recurso
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px;">
+
+                        <div class="form-row">
+
+                            <label>
+                                Tipo de Recurso
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Video Tutorial (YouTube)
+                                </option>
+
+                                <option>
+                                    Libro Aprobado (MEP / Administración)
+                                </option>
+
+                                <option>
+                                    Investigación o Informe Estudiantil
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Título
+                            </label>
+
+                            <input type="text"
+                                   placeholder="Ej. Balanceo de Ecuaciones Químicas">
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Materia
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Química
+                                </option>
+
+                                <option>
+                                    Matemáticas
+                                </option>
+
+                                <option>
+                                    Español
+                                </option>
+
+                                <option>
+                                    Inglés
+                                </option>
+
+                                <option>
+                                    Ciencias
+                                </option>
+
+                                <option>
+                                    Estudios Sociales
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Enlace o Archivo
+                            </label>
+
+                            <input type="text"
+                                   placeholder="URL de YouTube o adjuntar archivo">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row"
+                         style="margin-top:5px;">
+
+                        <label>
+                            Descripción
+                        </label>
+
+                        <textarea rows="3"
+                                  placeholder="Breve descripción del contenido..."></textarea>
+
+                    </div>
+
+
+                    <div style="margin-top:10px; text-align:right;">
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-upload"></i>
+
+                            Subir Recurso
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="activity-card">
+
+                    <div style="display:flex; gap:15px; flex-wrap:wrap;">
+
+                        <input type="text"
+                               placeholder="Buscar recurso..."
+                               style="padding:10px; width:250px;">
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Todas las materias
+                            </option>
+
+                            <option>
+                                Química
+                            </option>
+
+                            <option>
+                                Matemáticas
+                            </option>
+
+                            <option>
+                                Español
+                            </option>
+
+                        </select>
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-search"></i>
+
+                            Buscar
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 VIDEOS TUTORIALES
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    <i class="bi bi-youtube"></i>
+                    Videos Tutoriales
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Título</th>
+
+                                <th>Materia</th>
+
+                                <th>Subido por</th>
+
+                                <th>Fecha</th>
+
+                                <th>Enlace</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Balanceo de Ecuaciones Químicas
+                                </td>
+
+                                <td>
+                                    Química
+                                </td>
+
+                                <td>
+                                    Profesor Juan Pérez
+                                </td>
+
+                                <td>
+                                    02/08/2026
+                                </td>
+
+                                <td>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    Ver video
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Resolución de Ecuaciones de Segundo Grado
+                                </td>
+
+                                <td>
+                                    Matemáticas
+                                </td>
+
+                                <td>
+                                    Profesor Juan Pérez
+                                </td>
+
+                                <td>
+                                    28/07/2026
+                                </td>
+
+                                <td>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    Ver video
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Tiempos Verbales en Inglés
+                                </td>
+
+                                <td>
+                                    Inglés
+                                </td>
+
+                                <td>
+                                    Profesora María González
+                                </td>
+
+                                <td>
+                                    20/07/2026
+                                </td>
+
+                                <td>
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                    Ver video
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LIBROS APROBADOS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    <i class="bi bi-book"></i>
+                    Libros Aprobados
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Título</th>
+
+                                <th>Materia</th>
+
+                                <th>Aprobado por</th>
+
+                                <th>Fecha</th>
+
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Química General — Décimo Año
+                                </td>
+
+                                <td>
+                                    Química
+                                </td>
+
+                                <td>
+                                    MEP
+                                </td>
+
+                                <td>
+                                    2025
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Aprobado
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Matemáticas para Secundaria — Tomo II
+                                </td>
+
+                                <td>
+                                    Matemáticas
+                                </td>
+
+                                <td>
+                                    MEP
+                                </td>
+
+                                <td>
+                                    2024
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Aprobado
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Guía Complementaria de Estudios Sociales
+                                </td>
+
+                                <td>
+                                    Estudios Sociales
+                                </td>
+
+                                <td>
+                                    Administración LNSD
+                                </td>
+
+                                <td>
+                                    2026
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Aprobado
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 INVESTIGACIONES ESTUDIANTILES
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    <i class="bi bi-file-earmark-richtext"></i>
+                    Investigaciones y Trabajos Estudiantiles
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Título</th>
+
+                                <th>Autor</th>
+
+                                <th>Materia</th>
+
+                                <th>Aprobado por</th>
+
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Impacto de los Fertilizantes en Suelos Locales
+                                </td>
+
+                                <td>
+                                    Sofía Rodríguez
+                                </td>
+
+                                <td>
+                                    Química
+                                </td>
+
+                                <td>
+                                    Profesor Juan Pérez
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Aprobada — Material de Referencia
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Análisis del Agua Potable en la Comunidad
+                                </td>
+
+                                <td>
+                                    Ana Martínez
+                                </td>
+
+                                <td>
+                                    Química
+                                </td>
+
+                                <td>
+                                    Profesor Juan Pérez
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        En Revisión
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

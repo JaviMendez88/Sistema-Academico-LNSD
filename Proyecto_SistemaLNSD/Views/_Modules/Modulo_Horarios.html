@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Gestión de Horarios - Sistema Académico LNSD">
+
+    <title>
+        Horarios | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Administración
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardAdministrador.html" class="active">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ESTUDIANTES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Estudiantes.html">
+
+                            <i class="bi bi-mortarboard"></i>
+
+                            Estudiantes
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MATRÍCULA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Matricula.html">
+
+                            <i class="bi bi-journal-plus"></i>
+
+                            Matrícula
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html"
+                           class="active">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- BECAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Becas.html">
+
+                            <i class="bi bi-award"></i>
+
+                            Becas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- BOLETERÍA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Boleteria.html">
+
+                            <i class="bi bi-ticket-perforated"></i>
+
+                            Boletería
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INVENTARIO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Inventario.html">
+
+                            <i class="bi bi-box-seam"></i>
+
+                            Inventario
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- INFORMATIVO -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Informativo.html">
+
+                            <i class="bi bi-megaphone"></i>
+
+                            Informativo
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Gestión de Horarios
+                    </h1>
+
+                    <p>
+                        Asignación de horarios a docentes y estudiantes
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-badge"></i>
+
+                    <span>
+                        Personal Administrativo
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- HORARIOS REGISTRADOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-calendar3"></i>
+
+                    <h2>
+                        48
+                    </h2>
+
+                    <p>
+                        Horarios Registrados
+                    </p>
+
+                </div>
+
+
+                <!-- DOCENTES ASIGNADOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-person-workspace"></i>
+
+                    <h2>
+                        18
+                    </h2>
+
+                    <p>
+                        Docentes Asignados
+                    </p>
+
+                </div>
+
+
+                <!-- GRUPOS CUBIERTOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-diagram-3"></i>
+
+                    <h2>
+                        12
+                    </h2>
+
+                    <p>
+                        Grupos Cubiertos
+                    </p>
+
+                </div>
+
+
+                <!-- NOTIFICACIONES ENVIADAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-envelope-check"></i>
+
+                    <h2>
+                        48
+                    </h2>
+
+                    <p>
+                        Notificaciones Enviadas
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 REGISTRAR NUEVO HORARIO
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Registrar Nuevo Horario
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:15px;">
+
+                        <div class="form-row">
+
+                            <label>
+                                Materia
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Matemáticas
+                                </option>
+
+                                <option>
+                                    Español
+                                </option>
+
+                                <option>
+                                    Inglés
+                                </option>
+
+                                <option>
+                                    Ciencias
+                                </option>
+
+                                <option>
+                                    Estudios Sociales
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Docente
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Juan Pérez
+                                </option>
+
+                                <option>
+                                    María González
+                                </option>
+
+                                <option>
+                                    Carlos Ramírez
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Grado / Sección
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    10-A
+                                </option>
+
+                                <option>
+                                    10-B
+                                </option>
+
+                                <option>
+                                    11-A
+                                </option>
+
+                                <option>
+                                    11-B
+                                </option>
+
+                                <option>
+                                    12-A
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Día
+                            </label>
+
+                            <select style="padding:12px; border:1px solid #d9d9d9; border-radius:8px;">
+
+                                <option>
+                                    Lunes
+                                </option>
+
+                                <option>
+                                    Martes
+                                </option>
+
+                                <option>
+                                    Miércoles
+                                </option>
+
+                                <option>
+                                    Jueves
+                                </option>
+
+                                <option>
+                                    Viernes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Hora Inicio
+                            </label>
+
+                            <input type="time"
+                                   value="07:00">
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Hora Fin
+                            </label>
+
+                            <input type="time"
+                                   value="08:00">
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <label>
+                                Aula
+                            </label>
+
+                            <input type="text"
+                                   placeholder="Ej. Aula 5">
+
+                        </div>
+
+                    </div>
+
+
+                    <div style="margin-top:10px;">
+
+                        <label style="display:flex; align-items:center; gap:8px; font-weight:bold; color:var(--navy);">
+
+                            <input type="checkbox"
+                                   checked>
+
+                            Notificar por correo al docente y a los estudiantes
+
+                        </label>
+
+                    </div>
+
+
+                    <div style="margin-top:20px; text-align:right;">
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-save"></i>
+
+                            Guardar Horario
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 AVISO DE NOTIFICACIÓN AUTOMÁTICA
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="alert-box">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    <p>
+                        Al guardar un horario, el sistema envía automáticamente
+                        un correo de notificación al docente y a los estudiantes
+                        del grupo asignado.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 TABLA DE HORARIOS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Horarios Registrados
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Materia</th>
+
+                                <th>Docente</th>
+
+                                <th>Grado / Sección</th>
+
+                                <th>Día</th>
+
+                                <th>Hora</th>
+
+                                <th>Aula</th>
+
+                                <th>Notificación</th>
+
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- HORARIO 1 -->
+
+                            <tr>
+
+                                <td>
+                                    HOR-001
+                                </td>
+
+                                <td>
+                                    Matemáticas
+                                </td>
+
+                                <td>
+                                    Juan Pérez
+                                </td>
+
+                                <td>
+                                    10-A
+                                </td>
+
+                                <td>
+                                    Lunes
+                                </td>
+
+                                <td>
+                                    07:00 - 08:00
+                                </td>
+
+                                <td>
+                                    Aula 5
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Enviada
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- HORARIO 2 -->
+
+                            <tr>
+
+                                <td>
+                                    HOR-002
+                                </td>
+
+                                <td>
+                                    Español
+                                </td>
+
+                                <td>
+                                    María González
+                                </td>
+
+                                <td>
+                                    10-B
+                                </td>
+
+                                <td>
+                                    Martes
+                                </td>
+
+                                <td>
+                                    08:00 - 09:00
+                                </td>
+
+                                <td>
+                                    Aula 3
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Enviada
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- HORARIO 3 (PENDIENTE) -->
+
+                            <tr class="row-alert">
+
+                                <td>
+                                    HOR-003
+                                </td>
+
+                                <td>
+                                    Inglés
+                                </td>
+
+                                <td>
+                                    Carlos Ramírez
+                                </td>
+
+                                <td>
+                                    11-A
+                                </td>
+
+                                <td>
+                                    Miércoles
+                                </td>
+
+                                <td>
+                                    09:00 - 10:00
+                                </td>
+
+                                <td>
+                                    Aula 7
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Pendiente
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <i class="bi bi-pencil-square"></i>
+
+                                    <i class="bi bi-trash"></i>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 NOTIFICACIÓN GENERADA (EJEMPLO)
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Notificación Generada
+                </h2>
+
+                <div class="alert-box">
+
+                    <i class="bi bi-envelope-check"></i>
+
+                    <p>
+                        Se envió un correo a Juan Pérez y a los estudiantes de
+                        10-A confirmando el horario de Matemáticas los lunes
+                        de 07:00 a 08:00 en el Aula 5.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

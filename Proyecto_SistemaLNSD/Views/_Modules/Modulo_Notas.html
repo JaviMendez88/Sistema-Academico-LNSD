@@ -1,0 +1,1051 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Registro de Calificaciones - Sistema Académico LNSD">
+
+    <title>
+        Notas | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+                <h3>
+                    LNSD
+                </h3>
+
+                <span>
+                    Docente
+                </span>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="../_Dashboards/DashboardDocente.html">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MIS CURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Cursos.html">
+
+                            <i class="bi bi-book"></i>
+
+                            Mis Cursos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- HORARIOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Horarios.html">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Horarios
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Asistencia.html">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTAS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notas.html"
+                           class="active">
+
+                            <i class="bi bi-journal-check"></i>
+
+                            Notas
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- RECURSOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_RecursosAcademicos.html">
+
+                            <i class="bi bi-folder"></i>
+
+                            Recursos Académicos
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+                        Registro de Calificaciones
+                    </h1>
+
+                    <p>
+                        Gestión de notas por materia y estudiante
+                    </p>
+
+                </div>
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-person-workspace"></i>
+
+                    <span>
+                        Profesor Juan Pérez
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================
+                 INDICADORES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- MATERIAS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-journal-bookmark"></i>
+
+                    <h2>
+                        3
+                    </h2>
+
+                    <p>
+                        Materias Asignadas
+                    </p>
+
+                </div>
+
+
+                <!-- ESTUDIANTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-people"></i>
+
+                    <h2>
+                        28
+                    </h2>
+
+                    <p>
+                        Estudiantes
+                    </p>
+
+                </div>
+
+
+                <!-- PENDIENTES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-hourglass-split"></i>
+
+                    <h2>
+                        6
+                    </h2>
+
+                    <p>
+                        Evaluaciones Pendientes
+                    </p>
+
+                </div>
+
+
+                <!-- PROMEDIO -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-graph-up"></i>
+
+                    <h2>
+                        88
+                    </h2>
+
+                    <p>
+                        Promedio General
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 FILTROS
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Seleccionar Materia y Grupo
+                </h2>
+
+                <div class="activity-card">
+
+                    <div style="display:flex; gap:15px; flex-wrap:wrap; align-items:center;">
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                Química 10-A
+                            </option>
+
+                            <option>
+                                Matemáticas 10-A
+                            </option>
+
+                            <option>
+                                Matemáticas 10-B
+                            </option>
+
+                        </select>
+
+
+                        <select style="padding:10px;">
+
+                            <option>
+                                I Trimestre
+                            </option>
+
+                            <option>
+                                II Trimestre
+                            </option>
+
+                            <option>
+                                III Trimestre
+                            </option>
+
+                        </select>
+
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-search"></i>
+
+                            Cargar Lista
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LISTA DE ESTUDIANTES
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Estudiantes — Química 10-A
+                </h2>
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+
+                                <th>Nombre</th>
+
+                                <th>Promedio Actual</th>
+
+                                <th>Acciones</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- ESTUDIANTE 1 (SELECCIONADO) -->
+
+                            <tr class="row-alert">
+
+                                <td>
+                                    EST-001
+                                </td>
+
+                                <td>
+                                    Ana Martínez
+                                </td>
+
+                                <td>
+                                    90
+                                </td>
+
+                                <td>
+
+                                    <button class="btn-primary"
+                                            style="padding:8px 16px; font-size:0.85rem;">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Calificar
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 2 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-002
+                                </td>
+
+                                <td>
+                                    Luis Fernández
+                                </td>
+
+                                <td>
+                                    85
+                                </td>
+
+                                <td>
+
+                                    <button class="btn-primary"
+                                            style="padding:8px 16px; font-size:0.85rem;">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Calificar
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ESTUDIANTE 3 -->
+
+                            <tr>
+
+                                <td>
+                                    EST-003
+                                </td>
+
+                                <td>
+                                    Sofía Rodríguez
+                                </td>
+
+                                <td>
+                                    93
+                                </td>
+
+                                <td>
+
+                                    <button class="btn-primary"
+                                            style="padding:8px 16px; font-size:0.85rem;">
+
+                                        <i class="bi bi-pencil-square"></i>
+
+                                        Calificar
+
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 CALIFICACIONES DEL ESTUDIANTE
+            ================================== -->
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Calificaciones — Ana Martínez
+                </h2>
+
+
+                <!-- TRABAJO COTIDIANO -->
+
+                <div class="activity-card"
+                     style="margin-bottom:20px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+
+                        <h3 style="color:var(--navy); margin:0;">
+
+                            <i class="bi bi-clipboard-check"></i>
+
+                            Trabajo Cotidiano
+
+                        </h3>
+
+                        <button class="btn-primary"
+                                style="padding:8px 16px; font-size:0.85rem;">
+
+                            <i class="bi bi-plus-lg"></i>
+
+                            Agregar Actividad
+
+                        </button>
+
+                    </div>
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Fecha</th>
+
+                                <th>Actividad</th>
+
+                                <th>Nota</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    04/08/2026
+                                </td>
+
+                                <td>
+                                    Participación en clase
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="18"
+                                           max="20"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    05/08/2026
+                                </td>
+
+                                <td>
+                                    Trabajo en laboratorio
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="19"
+                                           max="20"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    06/08/2026
+                                </td>
+
+                                <td>
+                                    Resolución de guía en clase
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="17"
+                                           max="20"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    08/08/2026
+                                </td>
+
+                                <td>
+                                    Cuaderno al día
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           placeholder="Pendiente"
+                                           max="20"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ASISTENCIA -->
+
+                <div class="activity-card"
+                     style="margin-bottom:20px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+
+                        <h3 style="color:var(--navy); margin:0;">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </h3>
+
+                        <a href="Modulo_Asistencia.html"
+                           class="btn-primary"
+                           style="padding:8px 16px; font-size:0.85rem;">
+
+                            <i class="bi bi-box-arrow-up-right"></i>
+
+                            Ver Registro de Asistencia
+
+                        </a>
+
+                    </div>
+
+                    <div class="alert-box"
+                         style="margin-bottom:15px;">
+
+                        <i class="bi bi-info-circle"></i>
+
+                        <p>
+                            Esta nota se calcula automáticamente a partir de los
+                            registros del módulo de Asistencia y no se edita aquí.
+                        </p>
+
+                    </div>
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Presentes</th>
+
+                                <th>Ausentes</th>
+
+                                <th>Tardías</th>
+
+                                <th>Nota Calculada</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    27
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        20
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- EXÁMENES -->
+
+                <div class="activity-card"
+                     style="margin-bottom:20px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+
+                        <h3 style="color:var(--navy); margin:0;">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                            Exámenes
+
+                        </h3>
+
+                        <button class="btn-primary"
+                                style="padding:8px 16px; font-size:0.85rem;">
+
+                            <i class="bi bi-plus-lg"></i>
+
+                            Agregar Examen
+
+                        </button>
+
+                    </div>
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Fecha</th>
+
+                                <th>Examen</th>
+
+                                <th>Tema</th>
+
+                                <th>Nota</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    20/06/2026
+                                </td>
+
+                                <td>
+                                    Examen Parcial I
+                                </td>
+
+                                <td>
+                                    Tabla Periódica y Enlaces
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="85"
+                                           max="100"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    25/07/2026
+                                </td>
+
+                                <td>
+                                    Quiz Corto
+                                </td>
+
+                                <td>
+                                    Nomenclatura Química
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="18"
+                                           max="20"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    28/08/2026
+                                </td>
+
+                                <td>
+                                    Examen Parcial II
+                                </td>
+
+                                <td>
+                                    Reacciones Químicas
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           placeholder="Pendiente"
+                                           max="100"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TAREAS -->
+
+                <div class="activity-card"
+                     style="margin-bottom:20px;">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:15px;">
+
+                        <h3 style="color:var(--navy); margin:0;">
+
+                            <i class="bi bi-journal-text"></i>
+
+                            Tareas
+
+                        </h3>
+
+                        <button class="btn-primary"
+                                style="padding:8px 16px; font-size:0.85rem;">
+
+                            <i class="bi bi-plus-lg"></i>
+
+                            Agregar Tarea
+
+                        </button>
+
+                    </div>
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Fecha de Entrega</th>
+
+                                <th>Tarea</th>
+
+                                <th>Nota</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    10/07/2026
+                                </td>
+
+                                <td>
+                                    Tarea 1 — Tabla Periódica
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="95"
+                                           max="100"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    24/07/2026
+                                </td>
+
+                                <td>
+                                    Tarea 2 — Enlaces Químicos
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           value="90"
+                                           max="100"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    07/08/2026
+                                </td>
+
+                                <td>
+                                    Tarea 3 — Reacciones Químicas
+                                </td>
+
+                                <td>
+
+                                    <input type="number"
+                                           placeholder="Pendiente"
+                                           max="100"
+                                           class="status-select"
+                                           style="width:80px;">
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- RESUMEN -->
+
+                <div class="activity-card">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+
+                        <p style="margin:0;">
+
+                            <strong>
+                                Promedio Trimestral:
+                            </strong>
+
+                            90
+
+                        </p>
+
+                        <button class="btn-primary">
+
+                            <i class="bi bi-save"></i>
+
+                            Guardar Calificaciones
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 AVISO DE CONSULTA
+            ================================== -->
+
+            <section class="activity-section">
+
+                <div class="alert-box">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    <p>
+                        Una vez guardadas, las calificaciones quedan disponibles
+                        para que el estudiante las consulte en su propio panel.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>

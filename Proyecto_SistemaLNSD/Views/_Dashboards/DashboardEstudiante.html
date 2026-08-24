@@ -1,0 +1,2345 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Dashboard Estudiante - Sistema Académico LNSD">
+
+    <title>
+        Dashboard Estudiante | Sistema Académico LNSD
+    </title>
+
+
+    <!-- =========================================
+         CSS PRINCIPAL
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="../../Styles/main.css">
+
+
+    <!-- =========================================
+         BOOTSTRAP ICONS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <div class="dashboard-layout">
+
+
+        <!-- =====================================
+             SIDEBAR
+        ====================================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- CABECERA -->
+
+            <div class="sidebar-header">
+
+                <img src="../../Assets/logo-lnsd.jpeg"
+                     alt="Logo Liceo Nuevo de Santo Domingo"
+                     class="sidebar-logo">
+
+
+                <h3>
+                    LNSD
+                </h3>
+
+
+                <span>
+                    Estudiante
+                </span>
+
+            </div>
+
+
+
+            <!-- NAVEGACIÓN -->
+
+            <nav>
+
+                <ul>
+
+
+                    <!-- DASHBOARD -->
+
+                    <li>
+
+                        <a href="DashboardEstudiante.html"
+                           class="active">
+
+                            <i class="bi bi-speedometer2"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- MI PERFIL -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="bi bi-person-vcard"></i>
+
+                            Mi Perfil
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- MI HORARIO -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="bi bi-calendar3"></i>
+
+                            Mi Horario
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- MI ASISTENCIA -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Mi Asistencia
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- MIS NOTAS -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="bi bi-journal-check"></i>
+
+                            Mis Notas
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- RECURSOS ACADÉMICOS -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_RecursosAcademicos.html">
+
+                            <i class="bi bi-folder"></i>
+
+                            Recursos Académicos
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- MI BECA -->
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="bi bi-award"></i>
+
+                            Mi Beca
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- COMEDOR -->
+
+                    <li>
+
+                        <a href="#comedor">
+
+                            <i class="bi bi-ticket-perforated"></i>
+
+                            Comedor
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <li>
+
+                        <a href="../_Modules/Modulo_Notificaciones.html">
+
+                            <i class="bi bi-bell"></i>
+
+                            Notificaciones
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </nav>
+
+
+        </aside>
+
+
+
+        <!-- =====================================
+             CONTENIDO PRINCIPAL
+        ====================================== -->
+
+        <main class="dashboard-content">
+
+
+            <!-- =================================
+                 HEADER
+            ================================== -->
+
+            <header class="dashboard-header">
+
+
+                <div>
+
+                    <h1>
+                        Portal Estudiantil
+                    </h1>
+
+                    <p>
+                        Consulta de información y actividades académicas
+                    </p>
+
+                </div>
+
+
+                <details class="notif-bell">
+
+                    <summary>
+                        <i class="bi bi-bell"></i>
+                        <span class="notif-badge">3</span>
+                    </summary>
+
+                    <div class="notif-dropdown">
+
+                        <div class="notif-dropdown-header">
+                            <span>Notificaciones</span>
+                            <a href="../_Modules/Modulo_Notificaciones.html">Ver todas</a>
+                        </div>
+
+                        <div class="notif-item unread">
+                            <i class="bi bi-journal-check"></i>
+                            <div>
+                                <p>Nueva nota registrada en Química.</p>
+                                <span>Hace 1 hora</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item unread">
+                            <i class="bi bi-calendar3"></i>
+                            <div>
+                                <p>Cambio de horario: Inglés se movió al Aula 3.</p>
+                                <span>Hace 4 horas</span>
+                            </div>
+                        </div>
+
+                        <div class="notif-item">
+                            <i class="bi bi-megaphone"></i>
+                            <div>
+                                <p>Aviso: entrega de tarea de Química mañana.</p>
+                                <span>Ayer</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </details>
+
+
+                <div class="admin-profile">
+
+                    <i class="bi bi-mortarboard"></i>
+
+                    <span>
+                        Juan Rodríguez
+                    </span>
+
+                </div>
+
+
+            </header>
+
+
+
+            <!-- =================================
+                 TARJETAS PRINCIPALES
+            ================================== -->
+
+            <section class="dashboard-cards">
+
+
+                <!-- PROMEDIO GENERAL -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-journal-check"></i>
+
+                    <h2>
+                        89
+                    </h2>
+
+                    <p>
+                        Promedio General
+                    </p>
+
+                </div>
+
+
+
+                <!-- ASISTENCIA -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-calendar-check"></i>
+
+                    <h2>
+                        97%
+                    </h2>
+
+                    <p>
+                        Asistencia
+                    </p>
+
+                </div>
+
+
+
+                <!-- CURSOS -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-book"></i>
+
+                    <h2>
+                        8
+                    </h2>
+
+                    <p>
+                        Cursos Activos
+                    </p>
+
+                </div>
+
+
+
+                <!-- NOTIFICACIONES -->
+
+                <div class="dashboard-card">
+
+                    <i class="bi bi-bell"></i>
+
+                    <h2>
+                        5
+                    </h2>
+
+                    <p>
+                        Notificaciones
+                    </p>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================
+                 ACCESOS RÁPIDOS
+            ================================== -->
+
+            <section>
+
+
+                <h2 class="dashboard-section-title">
+
+                    Acceso Rápido
+
+                </h2>
+
+
+                <div class="module-grid">
+
+
+                    <!-- MI HORARIO -->
+
+                    <a href="#"
+                       class="module-card">
+
+                        <i class="bi bi-calendar3"></i>
+
+                        <span>
+                            Mi Horario
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- MIS NOTAS -->
+
+                    <a href="#"
+                       class="module-card">
+
+                        <i class="bi bi-journal-check"></i>
+
+                        <span>
+                            Mis Notas
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- ASISTENCIA -->
+
+                    <a href="../_Modules/Modulo_Asistencia.html"
+                       class="module-card">
+
+                        <i class="bi bi-calendar-check"></i>
+
+                        <span>
+                            Asistencia
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- RECURSOS -->
+
+                    <a href="#"
+                       class="module-card">
+
+                        <i class="bi bi-folder"></i>
+
+                        <span>
+                            Recursos
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- MI BECA -->
+
+                    <a href="#"
+                       class="module-card">
+
+                        <i class="bi bi-award"></i>
+
+                        <span>
+                            Mi Beca
+                        </span>
+
+                    </a>
+
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <a href="../_Modules/Modulo_Notificaciones.html"
+                       class="module-card">
+
+                        <i class="bi bi-bell"></i>
+
+                        <span>
+                            Notificaciones
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 HORARIO DEL DÍA
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Horario de Hoy
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        07:00 - Matemáticas
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        08:20 - Español
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        09:40 - Ciencias
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        11:00 - Estudios Sociales
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-clock"></i>
+
+                        13:00 - Inglés
+
+                    </p>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 ÚLTIMAS NOTIFICACIONES
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Últimas Notificaciones
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-bell"></i>
+
+                        Se publicó una nueva calificación en Matemáticas.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-file-earmark-text"></i>
+
+                        Nuevo recurso académico disponible.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Actualización en horario del viernes.
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-megaphone"></i>
+
+                        Recordatorio de Feria Científica.
+
+                    </p>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================
+                 RENDIMIENTO ACADÉMICO
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Rendimiento Académico
+
+                </h2>
+
+
+                <div class="activity-card">
+
+
+                    <p>
+
+                        <i class="bi bi-check-circle"></i>
+
+                        Matemáticas: 92
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-check-circle"></i>
+
+                        Español: 88
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-check-circle"></i>
+
+                        Ciencias: 94
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-check-circle"></i>
+
+                        Estudios Sociales: 90
+
+                    </p>
+
+
+                    <p>
+
+                        <i class="bi bi-check-circle"></i>
+
+                        Inglés: 86
+
+                    </p>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 MIS BECAS
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Mis Becas
+
+                </h2>
+
+
+                <div class="activity-card">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Tipo de Beca</th>
+
+                                <th>Fecha de Otorgamiento</th>
+
+                                <th>Estado</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- BECA ACTUAL -->
+
+                            <tr>
+
+                                <td>
+                                    Beca Socioeconómica
+                                </td>
+
+                                <td>
+                                    15/02/2026
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Activa
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BECA ALIMENTARIA -->
+
+                            <tr>
+
+                                <td>
+                                    Beca Alimentaria
+                                </td>
+
+                                <td>
+                                    01/02/2026
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Activa
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BECA ANTERIOR 1 -->
+
+                            <tr>
+
+                                <td>
+                                    Beca por Hermanos
+                                </td>
+
+                                <td>
+                                    12/02/2025
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Finalizada
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BECA ANTERIOR 2 -->
+
+                            <tr>
+
+                                <td>
+                                    Beca Deportiva
+                                </td>
+
+                                <td>
+                                    05/03/2024
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-danger">
+                                        Revocada
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 BOLETERÍA / COMEDOR
+            ================================== -->
+
+            <section class="activity-section"
+                     id="comedor">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Boletería del Comedor
+
+                </h2>
+
+
+                <div class="alert-box">
+
+                    <i class="bi bi-award"></i>
+
+                    <p>
+                        Contás con <strong>Beca Alimentaria</strong> activa: al
+                        presentar el tiquete en el comedor solo debés mostrar tu
+                        usuario, no realizás ningún pago.
+                    </p>
+
+                </div>
+
+
+                <div class="activity-card">
+
+                    <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:15px;">
+
+                        <div>
+
+                            <p style="margin:0;">
+                                <strong>Tiquete Actual:</strong>
+                                TQ-2026-08-09-0143
+                            </p>
+
+                            <p style="margin:5px 0 0 0; color:#888; font-size:0.9rem;">
+                                Emitido: 12:05 p.m. — Vence: 1:05 p.m.
+                            </p>
+
+                        </div>
+
+                        <span class="badge badge-warning">
+                            Activo — Sin canjear
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div style="text-align:right; margin-top:15px;">
+
+                    <button class="btn-primary">
+
+                        <i class="bi bi-ticket-perforated"></i>
+
+                        Solicitar Nuevo Tiquete de Almuerzo
+
+                    </button>
+
+                </div>
+
+
+                <div class="activity-card"
+                     style="margin-top:20px;">
+
+                    <table class="module-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Fecha</th>
+
+                                <th>Código</th>
+
+                                <th>Estado</th>
+
+                                <th>Pago</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    09/08/2026
+                                </td>
+
+                                <td>
+                                    TQ-2026-08-09-0143
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-warning">
+                                        Activo
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Beca Alimentaria — ₡0
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    08/08/2026
+                                </td>
+
+                                <td>
+                                    TQ-2026-08-08-0098
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        Usado
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Beca Alimentaria — ₡0
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    07/08/2026
+                                </td>
+
+                                <td>
+                                    TQ-2026-08-07-0071
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-danger">
+                                        Expirado — No Usado
+                                    </span>
+                                </td>
+
+                                <td>
+                                    —
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 SELECTOR DE MATERIA
+            ================================== -->
+
+            <input type="radio" id="subj-quimica" name="subjectSel" class="subject-radio" checked>
+            <input type="radio" id="subj-matematicas" name="subjectSel" class="subject-radio">
+            <input type="radio" id="subj-espanol" name="subjectSel" class="subject-radio">
+
+            <section class="activity-section">
+
+                <h2 class="dashboard-section-title">
+                    Seleccionar Materia
+                </h2>
+
+                <div class="subject-tabs">
+
+                    <label for="subj-quimica" class="subject-tab">
+                        Química
+                    </label>
+
+                    <label for="subj-matematicas" class="subject-tab">
+                        Matemáticas
+                    </label>
+
+                    <label for="subj-espanol" class="subject-tab">
+                        Español
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 MI ASISTENCIA
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Mi Asistencia
+
+                </h2>
+
+
+                <!-- QUÍMICA -->
+
+                <div class="subject-panel panel-quimica">
+
+                    <div class="activity-card">
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Materia</th>
+
+                                    <th>Estado</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        04/08/2026
+                                    </td>
+
+                                    <td>
+                                        Química
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        05/08/2026
+                                    </td>
+
+                                    <td>
+                                        Química
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="row-alert">
+
+                                    <td>
+                                        06/08/2026
+                                    </td>
+
+                                    <td>
+                                        Química
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-danger">
+                                            Ausente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        07/08/2026
+                                    </td>
+
+                                    <td>
+                                        Química
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Tardía
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        08/08/2026
+                                    </td>
+
+                                    <td>
+                                        Química
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Tardía
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                        <div style="margin-top:15px; text-align:right;">
+
+                            <p>
+
+                                <strong>
+                                    Total del trimestre:
+                                </strong>
+
+                                27 presentes, 1 ausente, 2 tardías
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MATEMÁTICAS -->
+
+                <div class="subject-panel panel-matematicas">
+
+                    <div class="activity-card">
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Materia</th>
+
+                                    <th>Estado</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        04/08/2026
+                                    </td>
+
+                                    <td>
+                                        Matemáticas
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        05/08/2026
+                                    </td>
+
+                                    <td>
+                                        Matemáticas
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        06/08/2026
+                                    </td>
+
+                                    <td>
+                                        Matemáticas
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        07/08/2026
+                                    </td>
+
+                                    <td>
+                                        Matemáticas
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        08/08/2026
+                                    </td>
+
+                                    <td>
+                                        Matemáticas
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                        <div style="margin-top:15px; text-align:right;">
+
+                            <p>
+
+                                <strong>
+                                    Total del trimestre:
+                                </strong>
+
+                                30 presentes, 0 ausentes, 0 tardías
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ESPAÑOL -->
+
+                <div class="subject-panel panel-espanol">
+
+                    <div class="activity-card">
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Materia</th>
+
+                                    <th>Estado</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>
+                                        04/08/2026
+                                    </td>
+
+                                    <td>
+                                        Español
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        05/08/2026
+                                    </td>
+
+                                    <td>
+                                        Español
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Tardía
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        06/08/2026
+                                    </td>
+
+                                    <td>
+                                        Español
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>
+                                        07/08/2026
+                                    </td>
+
+                                    <td>
+                                        Español
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-success">
+                                            Presente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="row-alert">
+
+                                    <td>
+                                        08/08/2026
+                                    </td>
+
+                                    <td>
+                                        Español
+                                    </td>
+
+                                    <td>
+                                        <span class="badge badge-danger">
+                                            Ausente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+
+                        <div style="margin-top:15px; text-align:right;">
+
+                            <p>
+
+                                <strong>
+                                    Total del trimestre:
+                                </strong>
+
+                                26 presentes, 2 ausentes, 2 tardías
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 MIS NOTAS
+            ================================== -->
+
+            <section class="activity-section">
+
+
+                <h2 class="dashboard-section-title">
+
+                    Mis Notas — I Trimestre
+
+                </h2>
+
+
+                <!-- ===== QUÍMICA ===== -->
+
+                <div class="subject-panel panel-quimica">
+
+
+                    <!-- TRABAJO COTIDIANO -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-clipboard-check"></i>
+
+                            Trabajo Cotidiano
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Actividad</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>04/08/2026</td>
+
+                                    <td>Participación en clase</td>
+
+                                    <td>18</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>05/08/2026</td>
+
+                                    <td>Trabajo en laboratorio</td>
+
+                                    <td>19</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>06/08/2026</td>
+
+                                    <td>Resolución de guía en clase</td>
+
+                                    <td>17</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>08/08/2026</td>
+
+                                    <td>Cuaderno al día</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </h3>
+
+                        <p>
+                            Calculada a partir de mi historial de asistencia
+                            en Química (ver sección "Mi Asistencia" arriba).
+                        </p>
+
+                        <p style="margin-top:10px;">
+
+                            <strong>Nota:</strong>
+
+                            <span class="badge badge-success">20</span>
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- EXÁMENES -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                            Exámenes
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Examen</th>
+
+                                    <th>Tema</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>20/06/2026</td>
+
+                                    <td>Examen Parcial I</td>
+
+                                    <td>Tabla Periódica y Enlaces</td>
+
+                                    <td>85</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>25/07/2026</td>
+
+                                    <td>Quiz Corto</td>
+
+                                    <td>Nomenclatura Química</td>
+
+                                    <td>18</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>28/08/2026</td>
+
+                                    <td>Examen Parcial II</td>
+
+                                    <td>Reacciones Químicas</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- TAREAS -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-journal-text"></i>
+
+                            Tareas
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha de Entrega</th>
+
+                                    <th>Tarea</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>10/07/2026</td>
+
+                                    <td>Tarea 1 — Tabla Periódica</td>
+
+                                    <td>95</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>24/07/2026</td>
+
+                                    <td>Tarea 2 — Enlaces Químicos</td>
+
+                                    <td>90</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>07/08/2026</td>
+
+                                    <td>Tarea 3 — Reacciones Químicas</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- RESUMEN -->
+
+                    <div class="activity-card">
+
+                        <p style="margin:0; text-align:right;">
+
+                            <strong>Promedio Trimestral:</strong>
+
+                            90
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===== MATEMÁTICAS ===== -->
+
+                <div class="subject-panel panel-matematicas">
+
+
+                    <!-- TRABAJO COTIDIANO -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-clipboard-check"></i>
+
+                            Trabajo Cotidiano
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Actividad</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>04/08/2026</td>
+
+                                    <td>Ejercicios en clase</td>
+
+                                    <td>20</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>05/08/2026</td>
+
+                                    <td>Resolución de problemas</td>
+
+                                    <td>18</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>06/08/2026</td>
+
+                                    <td>Trabajo en parejas</td>
+
+                                    <td>19</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>08/08/2026</td>
+
+                                    <td>Cuaderno al día</td>
+
+                                    <td>20</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </h3>
+
+                        <p>
+                            Calculada a partir de mi historial de asistencia
+                            en Matemáticas (ver sección "Mi Asistencia" arriba).
+                        </p>
+
+                        <p style="margin-top:10px;">
+
+                            <strong>Nota:</strong>
+
+                            <span class="badge badge-success">20</span>
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- EXÁMENES -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                            Exámenes
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Examen</th>
+
+                                    <th>Tema</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>15/06/2026</td>
+
+                                    <td>Examen Parcial I</td>
+
+                                    <td>Álgebra</td>
+
+                                    <td>90</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>10/07/2026</td>
+
+                                    <td>Quiz Corto</td>
+
+                                    <td>Funciones</td>
+
+                                    <td>17</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>26/08/2026</td>
+
+                                    <td>Examen Parcial II</td>
+
+                                    <td>Geometría</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- TAREAS -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-journal-text"></i>
+
+                            Tareas
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha de Entrega</th>
+
+                                    <th>Tarea</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>08/07/2026</td>
+
+                                    <td>Tarea 1 — Ecuaciones</td>
+
+                                    <td>88</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>22/07/2026</td>
+
+                                    <td>Tarea 2 — Funciones Lineales</td>
+
+                                    <td>92</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>05/08/2026</td>
+
+                                    <td>Tarea 3 — Geometría</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- RESUMEN -->
+
+                    <div class="activity-card">
+
+                        <p style="margin:0; text-align:right;">
+
+                            <strong>Promedio Trimestral:</strong>
+
+                            91
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===== ESPAÑOL ===== -->
+
+                <div class="subject-panel panel-espanol">
+
+
+                    <!-- TRABAJO COTIDIANO -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-clipboard-check"></i>
+
+                            Trabajo Cotidiano
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Actividad</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>04/08/2026</td>
+
+                                    <td>Lectura en voz alta</td>
+
+                                    <td>17</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>05/08/2026</td>
+
+                                    <td>Análisis de texto</td>
+
+                                    <td>18</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>06/08/2026</td>
+
+                                    <td>Participación en clase</td>
+
+                                    <td>16</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>08/08/2026</td>
+
+                                    <td>Ejercicios de ortografía</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- ASISTENCIA -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-calendar-check"></i>
+
+                            Asistencia
+
+                        </h3>
+
+                        <p>
+                            Calculada a partir de mi historial de asistencia
+                            en Español (ver sección "Mi Asistencia" arriba).
+                        </p>
+
+                        <p style="margin-top:10px;">
+
+                            <strong>Nota:</strong>
+
+                            <span class="badge badge-warning">17</span>
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- EXÁMENES -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-file-earmark-text"></i>
+
+                            Exámenes
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha</th>
+
+                                    <th>Examen</th>
+
+                                    <th>Tema</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>18/06/2026</td>
+
+                                    <td>Examen Parcial I</td>
+
+                                    <td>Comprensión Lectora</td>
+
+                                    <td>80</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>12/07/2026</td>
+
+                                    <td>Quiz Corto</td>
+
+                                    <td>Gramática</td>
+
+                                    <td>15</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>27/08/2026</td>
+
+                                    <td>Examen Parcial II</td>
+
+                                    <td>Literatura</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- TAREAS -->
+
+                    <div class="activity-card"
+                         style="margin-bottom:20px;">
+
+                        <h3 style="color:var(--navy); margin-bottom:15px;">
+
+                            <i class="bi bi-journal-text"></i>
+
+                            Tareas
+
+                        </h3>
+
+                        <table class="module-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>Fecha de Entrega</th>
+
+                                    <th>Tarea</th>
+
+                                    <th>Nota</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td>09/07/2026</td>
+
+                                    <td>Tarea 1 — Ensayo</td>
+
+                                    <td>85</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>23/07/2026</td>
+
+                                    <td>Tarea 2 — Resumen</td>
+
+                                    <td>82</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td>06/08/2026</td>
+
+                                    <td>Tarea 3 — Análisis Literario</td>
+
+                                    <td>
+                                        <span class="badge badge-warning">
+                                            Pendiente
+                                        </span>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+
+                    <!-- RESUMEN -->
+
+                    <div class="activity-card">
+
+                        <p style="margin:0; text-align:right;">
+
+                            <strong>Promedio Trimestral:</strong>
+
+                            82
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

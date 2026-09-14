@@ -1,4 +1,4 @@
-/* ---- Creación DB y Control ---- */
+ /* ---- Creación DB y Control ---- */
 
 USE master;
 GO
